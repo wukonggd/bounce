@@ -1,10 +1,9 @@
-const audio = document.getElementById('audio');
-const playButton = document.getElementById('playButton');
-let isPlaying = false;
+let isAudioPlayed = false;
 
-playButton.addEventListener('click', () => {
-    if (!isPlaying) {
+document.body.addEventListener('click', function() {
+   if (!isAudioPlayed) {
+    var audio = document.getElementById('audio');
     audio.play();
-    isPlaying = true;
-     }
-     });
+    isAudioPlayed = true;
+}
+});
