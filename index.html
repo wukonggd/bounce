@@ -62,6 +62,20 @@
             </nav>
         </header>
 
+    <audio id="audio" autoplay>
+        <source src="song/bouncesong1.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+
+
+    <script>
+        function stopAudio() {
+            var audio = document.getElementById('audio');
+            audio.pause();
+            audio.currentTime = 0; // Reset audio to start
+        }
+    </script>
+
         <main class="main">
             <!--==================== home ====================-->
             <section class="home container" id="home">
@@ -151,6 +165,8 @@
                 <center>
                 <h3 class="bounceeenomics__title">Contract Address: <br> 0x0645800C916641842Da2De8158931806C95B9Dda</h3>
                 <button onclick="copyText()">Copy</button>
+
+    <button onclick="stopAudio()">Turn Off So Bounce Music</button>
                 </center>
             </section>
 
