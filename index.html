@@ -150,6 +150,7 @@
             <section class="section category">
                 <center>
                 <h3 class="bounceeenomics__title">Contract Address: <br> 0x0645800C916641842Da2De8158931806C95B9Dda</h3>
+                <button onclick="copyText()">Copy</button>
                 </center>
             </section>
 
@@ -368,5 +369,13 @@
         
         <!--=============== main js ===============-->
         <script src="assets/js/main.js"></script>
+    <script>
+        function copyText() {
+            const textToCopy = "0x0645800C916641842Da2De8158931806C95B9Dda";
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                alert("Text copied to clipboard!");
+            });
+        }
+    </script>
     </body>
 </html>
