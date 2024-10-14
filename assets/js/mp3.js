@@ -7,3 +7,13 @@ document.body.addEventListener('click', function() {
     isAudioPlayed = true;
 }
 });
+
+document.getElementById('toggleButton').addEventListener('click', function() {
+   var audio = document.getElementById('audio');
+   if (isAudioPlaying) {
+   audio.pause();
+     } else {
+   audio.play();
+      }
+   isAudioPlaying = !isAudioPlaying;
+});
