@@ -1,9 +1,10 @@
-        const audio = document.getElementById('audio');
-        let isPlaying = false;
+const audio = document.getElementById('audio');
+const playButton = document.getElementById('playButton');
+let isPlaying = false;
 
-        document.addEventListener('mousemove', () => {
-            if (!isPlaying) {
-                audio.play();
-                isPlaying = true;
-            }
-        });
+playButton.addEventListener('click', () => {
+    if (!isPlaying) {
+    audio.play();
+    isPlaying = true;
+     }
+     });
