@@ -62,20 +62,6 @@
             </nav>
         </header>
 
-    <audio id="audio" autoplay>
-        <source src="assets/song/bouncesong1.mp3" type="audio/mpeg">
-        Your browser does not support the audio tag.
-    </audio>
-
-
-    <script>
-        function stopAudio() {
-            var audio = document.getElementById('audio');
-            audio.pause();
-            audio.currentTime = 0; // Reset audio to start
-        }
-    </script>
-
         <main class="main">
             <!--==================== home ====================-->
             <section class="home container" id="home">
@@ -409,5 +395,18 @@
             background: linear-gradient(45deg, #388E3C, #66BB6A);
         }
     </style>
+    <audio id="audio" autoplay>
+        <source src="assets/song/bouncesong1.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+
+
+    <script>
+        function stopAudio() {
+            var audio = document.getElementById('audio');
+            audio.pause();
+            audio.currentTime = 0; // Reset audio to start
+        }
+    </script>
     </body>
 </html>
