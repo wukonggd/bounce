@@ -1,5 +1,9 @@
- function stopAudio() {
-            var audio = document.getElementById('audio');
-            audio.pause();
-            audio.currentTime = 0; // Reset audio to start
-        }
+        const audio = document.getElementById('audio');
+        let isPlaying = false;
+
+        document.addEventListener('mousemove', () => {
+            if (!isPlaying) {
+                audio.play();
+                isPlaying = true;
+            }
+        });
