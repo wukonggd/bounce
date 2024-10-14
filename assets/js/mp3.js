@@ -8,12 +8,9 @@
             }
         });
 
-        document.getElementById('toggleButton').addEventListener('click', function() {
+        document.getElementById('stopButton').addEventListener('click', function() {
             var audio = document.getElementById('audio');
-            if (isAudioPlaying) {
-                audio.pause();
-            } else {
-                audio.play();
-            }
-            isAudioPlaying = !isAudioPlaying;
+            audio.pause();
+            audio.currentTime = 0; // Reset audio to start
+            isAudioPlayed = false;
         });
