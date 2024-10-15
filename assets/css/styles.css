@@ -1035,3 +1035,33 @@ button{
   0% {transform: translateX(0);}
   100% {transform: translateX(-4135px);}
 }
+
+button2 {
+  background: linear-gradient(45deg, #4CAF50, #81C784);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+button2:hover {
+  background: linear-gradient(45deg, #388E3C, #66BB6A);
+}
+		
+button3 {
+  background: linear-gradient(45deg, #4CAF50, #81C784);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+button3:hover {
+  background: linear-gradient(45deg, #388E3C, #66BB6A);
+}
