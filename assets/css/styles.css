@@ -1012,3 +1012,26 @@ button{
   50%  { transform: translate(0, 15px); }
   100%   { transform: translate(0, -0px); }   
 }
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+.ticker-bounce {
+  width: 7000px;
+  padding: 5px 5;
+  color: #065b70;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-shadow: 0 0 3px rgba(0,0,1,1); 
+  
+  background: linear-gradient(135deg,  rgba(251, 90, 88, 1) 0%,rgba(251, 78, 76, 1) 11%,rgba(249, 52, 50, 1) 24%,rgba(141, 1, 0, 1) 30%,rgba(120, 2, 0, 1) 68%); /* W3C */
+}
+
+.ticker-bounce > * {
+  display: inline-block;
+  animation: bounce 20s infinite linear;
+}
+
+@keyframes bounce {
+  0% {transform: translateX(0);}
+  100% {transform: translateX(-4135px);}
+}
