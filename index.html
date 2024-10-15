@@ -150,6 +150,7 @@
             </section>
 
             <!--==================== bounce ====================-->
+		</br>			
 			<div class="ticker">
 				<div class="ticker-bounce">
 						<span>
@@ -161,6 +162,17 @@
 						</span>
 					</div>
 			</div>	
+
+                <center>
+            <div>
+		</br>
+
+            <!--==================== stop/pause ====================-->
+
+    	    <button3 class="music" onClick="togglePlay()">  StoOOpop/PlaaAAy dat SoOong  </button3>
+            <audio id="audio" src="assets/song/bouncesong.mp3"></audio>
+            </div>
+                </center>	
 
             <!--==================== contract address ====================-->
             <section class="section category">
@@ -398,7 +410,7 @@
         function copyText() {
             const textToCopy = "0x0645800C916641842Da2De8158931806C95B9Dda";
             navigator.clipboard.writeText(textToCopy).then(() => {
-                alert("Text copied to clipboard!");
+                alert("Contract address copied to clipboard!");
             });
         }
     </script>
