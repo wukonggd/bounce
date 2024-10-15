@@ -1037,7 +1037,7 @@ button{
 }
 
 button2 {
-  background: linear-gradient(45deg, #4CAF50, #81C784);
+  background: linear-gradient(45deg, #5b6145, #788547);
   color: white;
   border: none;
   padding: 5px 10px;
@@ -1048,14 +1048,14 @@ button2 {
 }
 
 button2:hover {
-  background: linear-gradient(45deg, #388E3C, #66BB6A);
+  background: linear-gradient(45deg, #41472c, #7f8d4a);
 }
 		
 button3 {
   background: linear-gradient(45deg, #4CAF50, #81C784);
   color: white;
   border: none;
-  padding: 5px 10px;
+  padding: 15px 10px;
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
